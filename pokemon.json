@@ -1,0 +1,17 @@
+[
+    {
+        "id":"135",
+        "nombre": "Jolteon",
+        "apodo": "Pikachu  despeinado",
+        "Shiny" : false,
+        "img" : "https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png"
+    },
+    {
+        "id":"16",
+        "nombre": "Pidgey",
+        "apodo": "El pollo",
+        "Shiny" : true,
+        "img" : "https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
+    }
+
+]

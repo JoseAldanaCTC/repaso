@@ -64,17 +64,72 @@ var numerosDePrueba =[5,6,15,25];
 
 var encontrado= numerosDePrueba.find(elemento => elemento >16);
 
-console.log(encontrado);
+//console.log(encontrado);
 
 // findIndex -> devuelve la posicion del primer elemento que cumple con 
 //la condicion indicada
 
 var encontrado= numerosDePrueba.findIndex(elemento => elemento >16);
 
-console.log(encontrado);
+//console.log(encontrado);
 
 // filter -> devuelve un array con todos los elementos que cumplen la condicion
 
 var encontrado= numerosDePrueba.filter(elemento => elemento >10);
 
-console.log(encontrado);
+//console.log(encontrado);
+
+//map -> devuelve un arreglo con los datos afectados por una funcion determinada
+
+// en cristiano: puedo por ejemplo devolver un array donde todos los datos
+ //fueron multiplicados x2
+
+var factores = [2,5,7,14];
+
+var producto =factores.map(n=>n*2);
+
+//console.log(producto);
+
+//reduce -> opera todos los datos de un array y devuelve un unico valor
+
+var resultado =factores.reduce(function(a,b){return a+b;});
+//console.log(resultado);
+
+// sort -> ordena los datos de un array
+
+var desorden =[3,-1, 50, 25, 27, 12, 3]
+
+var orden = desorden.sort();
+
+//console.log(orden);
+
+// toma el primer digito para ordenar
+
+var nombresAzar = ["Miguel","Keiden","Isabel","Marin","Ernesto","Kassandra","Akemi","Juan"];
+var orden = nombresAzar.sort();
+//console.log(nombresAzar);
+
+var arr=[40,1,5,200];
+
+var orden =arr.sort(function(a,b){return a-b;})
+//console.log(orden);
+
+//reverse -> invierte los datos de un array
+var nombresAzar = ["Miguel","Keiden","Isabel","Marin","Ernesto","Kassandra","Akemi","Juan"];
+nombresAzar.reverse();
+console.log(nombresAzar);
+
+//split -> divide una cadena de caracteres en arrays segun una condicion
+
+let mensaje = 'Soy un tipo feliz y afortunado';
+
+var corte = mensaje.split(' ');
+//console.log(corte);
+// si agregas un numero, ese numero funciona como limite de partes
+//var corte = mensaje.split(' ',3);
+//console.log(corte);
+
+
+//join -> une todos los datos de una cadena y agrega un separador
+console.log(corte);
+console.log(corte.join(","));
